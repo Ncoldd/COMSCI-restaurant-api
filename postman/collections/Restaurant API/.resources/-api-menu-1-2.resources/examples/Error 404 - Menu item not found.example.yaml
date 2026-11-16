@@ -1,0 +1,22 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/menu/99
+  method: GET
+response:
+  statusCode: 404
+  statusText: Not Found
+  headers:
+    X-Powered-By: Express
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "31"
+    ETag: W/"1f-VkPw/2BYMVEaaPnLLYFc7Gw75YM"
+    Date: Mon, 16 Nov 2026 21:37:42 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "error": "Menu item not found"
+      }
+order: 1000

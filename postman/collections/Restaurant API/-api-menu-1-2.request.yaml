@@ -1,0 +1,7 @@
+$kind: http-request
+name: /api/menu/1
+description: Returns a single menu item by id, or 404 if it doesn't exist.
+url: http://localhost:3000/api/menu/1
+method: GET
+examples: .resources/-api-menu-1-2.resources/examples
+order: 2000

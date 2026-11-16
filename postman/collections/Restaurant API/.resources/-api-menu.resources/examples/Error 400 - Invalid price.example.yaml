@@ -1,0 +1,45 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/menu
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \  \"name\": \"Garlic Bread\",\r
+
+      \  \"description\": \"Toasted bread with garlic butter\",\r
+
+      \  \"price\": -5.99,\r
+
+      \  \"category\": \"appetizer\",\r
+
+      \  \"ingredients\": [\"bread\", \"garlic\", \"butter\"]\r
+
+      }"
+response:
+  statusCode: 400
+  statusText: Bad Request
+  headers:
+    X-Powered-By: Express
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "122"
+    ETag: W/"7a-BdllXlJJkEOINAG9CEnPAZdvIXg"
+    Date: Mon, 16 Nov 2026 21:41:09 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "errors": [
+          {
+            "type": "field",
+            "value": -5.99,
+            "msg": "Price must be a number greater than 0",
+            "path": "price",
+            "location": "body"
+          }
+        ]
+      }
+order: 2000

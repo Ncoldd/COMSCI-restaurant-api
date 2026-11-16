@@ -1,0 +1,24 @@
+$kind: http-request
+name: /api/menu/1
+description: Updates an existing menu item. Returns 200 with the updated item, 400 on invalid input, or 404 if not found.
+url: http://localhost:3000/api/menu/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Classic Burger\",\r
+
+    \  \"description\": \"Beef patty with lettuce, tomato, and cheese on a sesame seed bun\",\r
+
+    \  \"price\": 13.49,\r
+
+    \  \"category\": \"entree\",\r
+
+    \  \"ingredients\": [\"beef\", \"lettuce\", \"tomato\", \"cheese\", \"bun\"],\r
+
+    \  \"available\": true\r
+
+    }"
+examples: .resources/-api-menu-1-1.resources/examples
+order: 4000

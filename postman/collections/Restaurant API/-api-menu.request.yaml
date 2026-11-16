@@ -1,0 +1,22 @@
+$kind: http-request
+name: /api/menu
+description: Adds new menu item. Validates all fields and returns 201 with the created item, or 400 on invalid input.
+url: http://localhost:3000/api/menu
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Garlic Bread\",\r
+
+    \  \"description\": \"Toasted bread with garlic butter\",\r
+
+    \  \"price\": 5.99,\r
+
+    \  \"category\": \"appetizer\",\r
+
+    \  \"ingredients\": [\"bread\", \"garlic\", \"butter\"]\r
+
+    }"
+examples: .resources/-api-menu.resources/examples
+order: 3000

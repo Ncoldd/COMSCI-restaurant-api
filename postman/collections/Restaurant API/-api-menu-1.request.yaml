@@ -1,0 +1,7 @@
+$kind: http-request
+name: /api/menu/1
+description: Removes a menu item by id and returns it, or 404 if not found.
+url: http://localhost:3000/api/menu/1
+method: DELETE
+examples: .resources/-api-menu-1.resources/examples
+order: 5000

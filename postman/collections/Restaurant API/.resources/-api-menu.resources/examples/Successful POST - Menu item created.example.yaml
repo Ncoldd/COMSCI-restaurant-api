@@ -1,0 +1,47 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/menu
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \  \"name\": \"Garlic Bread\",\r
+
+      \  \"description\": \"Toasted bread with garlic butter\",\r
+
+      \  \"price\": 5.99,\r
+
+      \  \"category\": \"appetizer\",\r
+
+      \  \"ingredients\": [\"bread\", \"garlic\", \"butter\"]\r
+
+      }"
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    X-Powered-By: Express
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "174"
+    ETag: W/"ae-LEqEN7PVIPE5j/5zrzUMNWlXFk4"
+    Date: Mon, 16 Nov 2026 21:40:09 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "id": 7,
+        "available": true,
+        "name": "Garlic Bread",
+        "description": "Toasted bread with garlic butter",
+        "price": 5.99,
+        "category": "appetizer",
+        "ingredients": [
+          "bread",
+          "garlic",
+          "butter"
+        ]
+      }
+order: 1000

@@ -1,0 +1,7 @@
+$kind: http-request
+name: /api/menu
+description: Returns all menu items
+url: http://localhost:3000/api/menu
+method: GET
+examples: .resources/-api-menu-2.resources/examples
+order: 1000
